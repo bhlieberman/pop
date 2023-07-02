@@ -1,6 +1,7 @@
 (ns hlperetz.pop.core)
 
 (defprotocol ISoql
+  :extend-via-metadata true 
   (query [this q]))
 
 (extend-protocol ISoql
